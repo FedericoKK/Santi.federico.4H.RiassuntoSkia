@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Santi.federico._4h.RiassuntoSkia.MainPage"
+             xmlns:Skiaforms="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            
+        </Grid.RowDefinitions>
+
+        <StackLayout Orientation="Horizontal" Grid.Row="0">
+            <Button x:Name="btnDisegna"
+                    Text="Disegna!"
+                    Clicked="btnDisegna_Clicked" />
+        </StackLayout>
+        <Skiaforms:SKCanvasView Grid.Row="1" 
+                                PaintSurface="SKCanvasView_PaintSurface" 
+                                x:Name="Tela">
+            
+        </Skiaforms:SKCanvasView>
+    </Grid>       
+
+
+</ContentPage>
